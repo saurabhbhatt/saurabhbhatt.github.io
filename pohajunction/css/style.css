@@ -1304,7 +1304,7 @@ ul.dropdown-menu:after {
 }
 
 .navbar-inverse {
-  background: #fff;
+  background: #70D112;
 }
 .navbar .navbar-brand {
   padding: 6px 0;
@@ -1314,13 +1314,13 @@ ul.dropdown-menu:after {
   color: #fff;
 }
 .navbar .navbar-brand .logo {
-  margin: -20px 5px 0 0;
+  margin: 0 5px 0 0;
   display: inline-block;
-  height: 72px;
-  width: 200px;
+  height: 40px;
+  width: 111px;
   vertical-align: middle;
   background: url(../img/poha_junction_logo.jpg);
-  background-size: 200px 72px;
+  background-size: 111px 40px;
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
@@ -1333,14 +1333,13 @@ ul.dropdown-menu:after {
   text-transform: uppercase;
   border-color: #333;
   color: #fff;
-    background: #333;
 }
 .navbar .navbar-toggle .fa {
   margin-right: 5px;
 }
 .navbar .navbar-toggle:hover {
   text-decoration: none;
-  background: #70D112;
+  background: #1bbc9b;
 }
 .navbar .navbar-nav {
   float: right;
@@ -1355,7 +1354,7 @@ ul.dropdown-menu:after {
 }
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li a:focus {
-  color: #70D112;
+  color: #DFFF00;
 }
 .navbar .navbar-nav li .dropdown-menu {
   background: #fff;
@@ -3600,9 +3599,5 @@ footer .list-circle-icons li a:hover .fa {
 
 @media (max-width: 991px) {
   .fff {
-    margin-top:10px; 
+    margin-top:20px; 
   }
-}
-
-
-    

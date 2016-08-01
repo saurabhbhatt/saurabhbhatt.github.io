@@ -1,7 +1,7 @@
 $('[data-toggle="tooltip"]').tooltip();
 $('[data-toggle="popover"]').popover();
 function showHeight() {
-  var $height = $(window).height() / 9;
+  var $height = $(window ).height() / 9;
   $('.wrapper-hero .centralise').css('margin-top', $height);
 }
 
