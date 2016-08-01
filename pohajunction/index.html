@@ -67,39 +67,33 @@
       <div class="container">
         <div class="centralise mymargin">
           <h1>Order your Breakfast Now!!</h1>
-          <p class="module-subtitle">Delicious Yummy Tasty</p>
+          <!--<p class="module-subtitle">Delicious Yummy Tasty</p> -->
 
           <div class="col-md-6 col-md-offset-3">
             <form class="form-horizontal">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-mobile"></i></span>
-                <input type="text" class="form-control" placeholder="Mobile Number" size="10" maxlength="10">
+                <input type="text" class="form-control" placeholder="Mobile Number" size="10" maxlength="10" onkeypress="return isNumber(event)">
               </div><!-- end input group -->
               <div class="space-20"></div>
 
               <div class="row">
                 <div class="col-md-6">
-                   <div class="input-group">
-                   <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                    <div class="controls">
-                      <select class="control-hw">
-                        <option>INDORI POHA</option>
-                        <option>CHEESE POHA</option>
-                      </select>
-                   </div><!-- end controls-->
-                </div><!-- end form-group -->
+                  <div class="form-group">
+                <input type="number" class="form-control" placeholder="Indori Poha Quantity" min="0">
+              </div><!-- end input group -->
                 </div>
 
                 <div class="col-md-6">
-                  <div class="form-group ">
-                    <input type="text" class="form-control fff" placeholder="Enter Quantity">
-                  </div>
+                   <div class="form-group fff">
+                <input type="number" class="form-control" placeholder="Cheese Poha Quantity" min="0">
+              </div><!-- end input group -->
                 </div>
               </div>
 
               <div class="space-20"></div>
 
-              <div class="form-group">
+              <div class="form-group fff">
                     <textarea id="inputMessage" placeholder="Your Address" class="form-control" rows="5"></textarea>
               </div><!-- end form-group -->
 
@@ -107,7 +101,7 @@
 
               <div class="btn-toolbar">
                 <a href="#none" class="btn btn-lg btn-default white">Reset Order</a>
-                <a href="https://wrapbootstrap.com/theme/halves-responsive-versatile-template-WB0248578" class="btn btn-lg btn-primary">Submit Order</a>
+                <a href="#" class="btn btn-lg btn-primary">Submit Order</a>
               </div><!-- end btn-toolbar -->
             </form>
           </div>
@@ -118,7 +112,7 @@
     
     <section class="wrapper wrapper-light", id = "about-poha">
       <div class="container">
-        <h2 class="module-title text-center">About Poha</h2>
+        <h2 class="module-title text-center"><strong>About Poha</strong></h2>
         <p class="module-subtitle text-center">Rice flakes, a paddy product is also popularly known as Poha. poha is a light breakfast which is easy and quick to prepare.</p>
         <ul class="list-icons list-icons-vertical">
           <li>
@@ -146,7 +140,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-           <h2 class="module-title text-center">Products &amp; Offers</h2>
+           <h2 class="module-title text-center"><strong>Products &amp; Offers</strong></h2>
             <ul class="nav nav-tabs nav-tabs-center margin-top-0" role="tablist">
               <li role="presentation" class="active"><a href="#products" aria-controls="portfolio" role="tab" data-toggle="tab">Products</a></li>
               <li role="presentation"><a href="#offers" aria-controls="customers" role="tab" data-toggle="tab">Offers</a></li>
@@ -162,7 +156,7 @@
               <img src="img/Indori_poha.jpg" alt="indori poha" />
               <h3>INDORI POHA</h3>
               <ul class="list-inline post-meta">
-                <li class="meta-comments" style="font-size:20px;">Price: <span class="fa fa-rupee"></span>35</li>
+                <li class="meta-comments" style="font-size:20px;">Price: <span class="fa fa-rupee"></span>35 per plate</li>
               </ul><!-- end post-meta -->
               <div class="post-content">
                 <p>About Indori Poha</p>
@@ -174,7 +168,7 @@
               <img src="img/cheese_poha.jpg" alt="indori poha" />
               <h3>CHEESE POHA</h3>
               <ul class="list-inline post-meta">
-                <li class="meta-comments" style="font-size:20px;">Price: <span class="fa fa-rupee"></span>45</li>
+                <li class="meta-comments" style="font-size:20px;">Price: <span class="fa fa-rupee"></span>45 per plate</li>
               </ul><!-- end post-meta -->
               <div class="post-content">
                 <p>About Cheese Poha</p>
@@ -185,7 +179,8 @@
           </div><!-- end tab-pane -->
           <div role="tabpanel" class="tab-pane fade" id="offers">
            <div class="row">
-          <div class="col-md-12">
+            <center><h3>No offeres yet</h3></center>
+          <div class="col-md-12" style="display:none;">
             <article class="post">
               <a href="blog-post.html"><img src="img/sample/500px/homestead.jpg" alt="" title="" /></a>
               <h3><a href="blog-post.html">Sintel at Seattle International Film</a></h3>
@@ -214,7 +209,7 @@
     <section class="wrapper wrapper-sub-footer" id = "contactus">
       <div class="container">
         <div class="row">
-          <h2 class="module-title text-center">Contact us</h2>
+          <h2 class="module-title text-center"><strong>Contact us</strong></h2>
           <div class="col-md-6">
             <h3>Poha Junction</h3>
             <p>Poha Junction brings you exquisite Indori poha at your doorstep. Get ready to swag your tongues to this mind blowing product.<br><br>
@@ -289,7 +284,7 @@
     
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/halves.js"></script>
+    <script src="js/pohajunction.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
       });

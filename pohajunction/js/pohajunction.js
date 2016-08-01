@@ -1,7 +1,7 @@
 $('[data-toggle="tooltip"]').tooltip();
 $('[data-toggle="popover"]').popover();
 function showHeight() {
-  var $height = $(window).height() / 9;
+  var $height = $(window ).height() / 9;
   $('.wrapper-hero .centralise').css('margin-top', $height);
 }
 
@@ -36,3 +36,12 @@ $(function() {
     }
   });
 });
+
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
