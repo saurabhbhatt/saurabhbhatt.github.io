@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "This tutorial is based on day to day practice of R programming.\n\n\nTable of Contents\n\n\n\n\n\"Some Basics\"\n\n\nDay 1: Printing Something\n\n\nDay 2: Setting Variables", 
+            "text": "This tutorial is based on day to day practice of R programming.\n\n\nTable of Contents\n\n\n\n\n\"Some Basics\"\n\n\nDay 1: Printing Something\n\n\nDay 2: Setting Variables\n\n\nDay 2: Listing Variables", 
             "title": "Home"
         }, 
         {
             "location": "/#table-of-contents", 
-            "text": "\"Some Basics\"  Day 1: Printing Something  Day 2: Setting Variables", 
+            "text": "\"Some Basics\"  Day 1: Printing Something  Day 2: Setting Variables  Day 2: Listing Variables", 
             "title": "Table of Contents"
         }, 
         {
@@ -37,8 +37,28 @@
         }, 
         {
             "location": "/Some-Basics/day2/", 
-            "text": "Work in progress", 
+            "text": "Problem\n\n\nHow do we save a value in a variable?\n\n\nSolution\n\n\nUse the assignment operator ( \n-\n or \n=\n). There is \nno\n need to declare your variable first:\n\n\n x \n- 3\n\n\n\nDiscussion\n\n\nUsing R in \u201ccalculator mode\u201d gets old pretty fast. Soon you will want to define variables and save values in them. This reduces typing, saves time, and clarifies your work.\n\n\nThere is no need to declare or explicitly create variables in R. Just assign a value to the name and R will create the variable:\n\n\n x \n- 3\n\n y \n- 4\n\n z \n- sqrt(x^2 + y^2)\n\n print(z)\n[1] 5\n\n\n\nNotice that the assignment operator is formed from a less-than character ( \n) and a hyphen ( \n-\n ) with no space between them.\n\n\n\n\n\nWhen you define a variable at the command prompt like this, the variable is held in your \nworkspace\n. The workspace is held in the computer\u2019s main memory but can be saved to disk when you exit from R. The variable definition remains in the workspace until you remove it.\n\n\n\n\n\nR is a \ndynamically typed language\n, which means that we can change a variable\u2019s data type at will. We could set \nx\n to be numeric, as just shown, and then turn around and immediately overwrite that with (say) a vector of character strings. R will not complain:\n\n\n print(x)\n[1] 3\n\n x \n- c(\"fee\", \"fie\", \"foe\", \"fum\")\n\n print(x)\n[1] \"fee\" \"fie\" \"foe\" \"fum\"\n\n\n\n\n\n\nIn some R functions you will see assignment statements that use the strange-looking assignment operator \n-\n :\n\n\nx \n- 3\n\n\n\nThat forces the assignment to a global variable rather than a local variable.\n\n\n\n\n\nIn the spirit of full disclosure, I will reveal that R also supports two other forms of assignment statements. A single equal sign ( \n=\n ) can be used as an assignment operator at the command prompt. A rightward assignment operator ( \n-\n ) can be used anywhere the leftward assignment operator ( \n-\n ) can be used:\n\n\n foo = 3\n\n print(foo)\n[1] 3\n\n 5 -\n fum\n\n print(fum)\n[1] 5\n\n\n\n\n\n\nI recommend that you should avoid \n=\n and \n-\n \n\n\n\n\nThe equals-sign assignment (\n=\n) is easily confused with the test for equality. \n\n\nThe rightward assignment (\n-\n) is just too unconventional and, worse, becomes difficult to read when the expression is long.", 
             "title": "Day 2 : Setting Variables"
+        }, 
+        {
+            "location": "/Some-Basics/day2/#problem", 
+            "text": "How do we save a value in a variable?", 
+            "title": "Problem"
+        }, 
+        {
+            "location": "/Some-Basics/day2/#solution", 
+            "text": "Use the assignment operator (  -  or  = ). There is  no  need to declare your variable first:   x  - 3", 
+            "title": "Solution"
+        }, 
+        {
+            "location": "/Some-Basics/day2/#discussion", 
+            "text": "Using R in \u201ccalculator mode\u201d gets old pretty fast. Soon you will want to define variables and save values in them. This reduces typing, saves time, and clarifies your work.  There is no need to declare or explicitly create variables in R. Just assign a value to the name and R will create the variable:   x  - 3  y  - 4  z  - sqrt(x^2 + y^2)  print(z)\n[1] 5  Notice that the assignment operator is formed from a less-than character (  ) and a hyphen (  -  ) with no space between them.   When you define a variable at the command prompt like this, the variable is held in your  workspace . The workspace is held in the computer\u2019s main memory but can be saved to disk when you exit from R. The variable definition remains in the workspace until you remove it.   R is a  dynamically typed language , which means that we can change a variable\u2019s data type at will. We could set  x  to be numeric, as just shown, and then turn around and immediately overwrite that with (say) a vector of character strings. R will not complain:   print(x)\n[1] 3  x  - c(\"fee\", \"fie\", \"foe\", \"fum\")  print(x)\n[1] \"fee\" \"fie\" \"foe\" \"fum\"   In some R functions you will see assignment statements that use the strange-looking assignment operator  -  :  x  - 3  That forces the assignment to a global variable rather than a local variable.   In the spirit of full disclosure, I will reveal that R also supports two other forms of assignment statements. A single equal sign (  =  ) can be used as an assignment operator at the command prompt. A rightward assignment operator (  -  ) can be used anywhere the leftward assignment operator (  -  ) can be used:   foo = 3  print(foo)\n[1] 3  5 -  fum  print(fum)\n[1] 5   I recommend that you should avoid  =  and  -     The equals-sign assignment ( = ) is easily confused with the test for equality.   The rightward assignment ( - ) is just too unconventional and, worse, becomes difficult to read when the expression is long.", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/Some-Basics/day3/", 
+            "text": "Work in progress", 
+            "title": "Day 3 : Listing Variables"
         }
     ]
 }
