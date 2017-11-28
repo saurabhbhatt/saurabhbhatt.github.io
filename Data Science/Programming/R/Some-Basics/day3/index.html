@@ -131,7 +131,7 @@
 <li>Use <code>ls.str</code> for more details about each variable.</li>
 </ul>
 <h1 id="discussion">Discussion</h1>
-<p>The ls function displays the names of objects in your workspace:</p>
+<p>The <code>ls</code> function displays the names of objects in your workspace:</p>
 <pre><code>&gt; x &lt;- 10
 &gt; y &lt;- 50
 &gt; z &lt;- c("three", "blind", "mice")
@@ -140,11 +140,11 @@
 &gt; ls()
 [1] "f" "x" "y" "z"
 </code></pre>
-<p>Notice that <code>ls</code> returns a vector of character strings in which each string is the name of one variable or function. When your workspace is empty, ls returns an empty vector, which produces this puzzling output:</p>
+<p>Notice that <code>ls</code> returns a vector of character strings in which each string is the name of one variable or function. When your workspace is empty, <code>ls</code> returns an empty vector, which produces this puzzling output:</p>
 <pre><code>&gt; ls()
 character(0)
 </code></pre>
-<p>That is R’s quaint way of saying that ls returned a zero-length vector of strings; that is, it returned an empty vector because nothing is defined in your workspace.</p>
+<p>That is R’s quaint way of saying that <code>ls</code> returned a zero-length vector of strings; that is, it returned an empty vector because nothing is defined in your workspace.</p>
 <hr>
 
 <p>If you want more than just a list of names, try <code>ls.str</code> ; this will also tell you something about each variable:</p>
