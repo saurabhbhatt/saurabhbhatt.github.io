@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Getting Started\n\n\nThis tutorial is based on day to day practice of R programming. Better understanding will generate when it will be practicing more.\n\n\nSome Basics\n\n\n\n\nDay 1 : Printing Something\n\n\nDay 2 : Setting Variables\n\n\nDay 3 : Listing Variables\n\n\nDay 4 : Deleting Variables", 
+            "text": "Getting Started\n\n\nThis tutorial is based on day to day practice of R programming. Better understanding will generate when it will be practicing more.\n\n\nSome Basics\n\n\n\n\nDay 1 : Printing Something\n\n\nDay 2 : Setting Variables\n\n\nDay 3 : Listing Variables\n\n\nDay 4 : Deleting Variables\n\n\nDay 5 : Creating a Vector\n\n\nDay 6 : Computing Basic Statistics\n\n\nDay 7 : Creating Sequence\n\n\nDay 8 : Comparing Vectors\n\n\nDay 9 : Selecting Vector Elements\n\n\nDay 10 : Performing Vector Arithmetic\n\n\nDay 11 : Getting Operator Precedence Right\n\n\nDay 12 : Defining a Function\n\n\nDay 13 : Typing Less \n Accomplish More\n\n\nDay 14 : Avoiding Some Common Mistakes", 
             "title": "Getting Started"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#some-basics", 
-            "text": "Day 1 : Printing Something  Day 2 : Setting Variables  Day 3 : Listing Variables  Day 4 : Deleting Variables", 
+            "text": "Day 1 : Printing Something  Day 2 : Setting Variables  Day 3 : Listing Variables  Day 4 : Deleting Variables  Day 5 : Creating a Vector  Day 6 : Computing Basic Statistics  Day 7 : Creating Sequence  Day 8 : Comparing Vectors  Day 9 : Selecting Vector Elements  Day 10 : Performing Vector Arithmetic  Day 11 : Getting Operator Precedence Right  Day 12 : Defining a Function  Day 13 : Typing Less   Accomplish More  Day 14 : Avoiding Some Common Mistakes", 
             "title": "Some Basics"
         }, 
         {
@@ -92,13 +92,128 @@
         }, 
         {
             "location": "/Some-Basics/day4/", 
-            "text": "Day 4 : Deleting Variables\n\n\nWork in Progress", 
+            "text": "Day 4 : Deleting Variables\n\n\nProblem\n\n\nHow do we remove unneeded variables or functions from our workspace or How to erase its contents completely?\n\n\nSolution\n\n\n\n\nUse the \nrm\n function\n\n\n\n\nDiscussion\n\n\nYour workspace can get cluttered quickly. The rm function removes, permanently, one or more objects from the workspace:\n\n\n1\n2\n3\n4\n5\n6\n7\n x \n-\n \n2\n*\npi\n\n\n x\n\n[\n1\n]\n \n6.283185\n\n\n\n \nrm\n(\nx\n)\n\n\n x\nError\n:\n object \nx\n not found\n\n\n\n\n\n\nThere is no \n\u201cundo\u201d\n; once the variable is gone, it\u2019s gone. You can remove several variables at once:\n\n\n1\n rm(x,y,z)\n\n\n\n\n\n\nYou can even erase your entire workspace at once. The \nrm\n function has a list argument consisting of a vector of names of variables to remove. Recall that the \nls\n function returns a vector of variables names; hence you can combine \nrm\n and \nls\n to erase everything:\n\n\n1\n2\n3\n4\n5\n6\n ls()\n[1] \nf\n \nx\n \ny\n \nz\n\n\n\n rm(list=ls())\n\n ls()\ncharacter(0)\n\n\n\n\n\n\n\n\nBe Polite\n\n\nNever put \nrm(list=ls())\n into code you share with others, such as a library function or sample code sent to a mailing list. Deleting all the variables in someone else\u2019s workspace is worse than rude and will make you extremely unpopular.", 
             "title": "Day 4 : Deleting Variables"
         }, 
         {
             "location": "/Some-Basics/day4/#day-4-deleting-variables", 
-            "text": "Work in Progress", 
+            "text": "", 
             "title": "Day 4 : Deleting Variables"
+        }, 
+        {
+            "location": "/Some-Basics/day4/#problem", 
+            "text": "How do we remove unneeded variables or functions from our workspace or How to erase its contents completely?", 
+            "title": "Problem"
+        }, 
+        {
+            "location": "/Some-Basics/day4/#solution", 
+            "text": "Use the  rm  function", 
+            "title": "Solution"
+        }, 
+        {
+            "location": "/Some-Basics/day4/#discussion", 
+            "text": "Your workspace can get cluttered quickly. The rm function removes, permanently, one or more objects from the workspace:  1\n2\n3\n4\n5\n6\n7  x  -   2 * pi   x [ 1 ]   6.283185    rm ( x )   x\nError :  object  x  not found   There is no  \u201cundo\u201d ; once the variable is gone, it\u2019s gone. You can remove several variables at once:  1  rm(x,y,z)   You can even erase your entire workspace at once. The  rm  function has a list argument consisting of a vector of names of variables to remove. Recall that the  ls  function returns a vector of variables names; hence you can combine  rm  and  ls  to erase everything:  1\n2\n3\n4\n5\n6  ls()\n[1]  f   x   y   z   rm(list=ls())  ls()\ncharacter(0)    Be Polite  Never put  rm(list=ls())  into code you share with others, such as a library function or sample code sent to a mailing list. Deleting all the variables in someone else\u2019s workspace is worse than rude and will make you extremely unpopular.", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/Some-Basics/day5/", 
+            "text": "Day 5 : Creating a Vector\n\n\nWork in Progress", 
+            "title": "Day 5 : Creating a Vector"
+        }, 
+        {
+            "location": "/Some-Basics/day5/#day-5-creating-a-vector", 
+            "text": "Work in Progress", 
+            "title": "Day 5 : Creating a Vector"
+        }, 
+        {
+            "location": "/Some-Basics/day6/", 
+            "text": "Day 6 : Computing Basic Statistics\n\n\nWork in Progress", 
+            "title": "Day 6 : Computing Basic Statistics"
+        }, 
+        {
+            "location": "/Some-Basics/day6/#day-6-computing-basic-statistics", 
+            "text": "Work in Progress", 
+            "title": "Day 6 : Computing Basic Statistics"
+        }, 
+        {
+            "location": "/Some-Basics/day7/", 
+            "text": "Day 7 : Creating Sequence\n\n\nWork in Progress", 
+            "title": "Day 7 : Creating Sequence"
+        }, 
+        {
+            "location": "/Some-Basics/day7/#day-7-creating-sequence", 
+            "text": "Work in Progress", 
+            "title": "Day 7 : Creating Sequence"
+        }, 
+        {
+            "location": "/Some-Basics/day8/", 
+            "text": "Day 8 : Comparing Vectors\n\n\nWork in Progress", 
+            "title": "Day 8 : Comparing Vectors"
+        }, 
+        {
+            "location": "/Some-Basics/day8/#day-8-comparing-vectors", 
+            "text": "Work in Progress", 
+            "title": "Day 8 : Comparing Vectors"
+        }, 
+        {
+            "location": "/Some-Basics/day9/", 
+            "text": "Day 9 : Selecting Vector Elements\n\n\nWork in Progress", 
+            "title": "Day 9 : Selecting Vector Elements"
+        }, 
+        {
+            "location": "/Some-Basics/day9/#day-9-selecting-vector-elements", 
+            "text": "Work in Progress", 
+            "title": "Day 9 : Selecting Vector Elements"
+        }, 
+        {
+            "location": "/Some-Basics/day10/", 
+            "text": "Day 10 : Performing Vector Arithmetic\n\n\nWork in Progress", 
+            "title": "Day 10 : Performing Vector Arithmetic"
+        }, 
+        {
+            "location": "/Some-Basics/day10/#day-10-performing-vector-arithmetic", 
+            "text": "Work in Progress", 
+            "title": "Day 10 : Performing Vector Arithmetic"
+        }, 
+        {
+            "location": "/Some-Basics/day11/", 
+            "text": "Day 11 : Getting Operator Precedence Right\n\n\nWork in Progress", 
+            "title": "Day 11 : Getting Operator Precedence Right"
+        }, 
+        {
+            "location": "/Some-Basics/day11/#day-11-getting-operator-precedence-right", 
+            "text": "Work in Progress", 
+            "title": "Day 11 : Getting Operator Precedence Right"
+        }, 
+        {
+            "location": "/Some-Basics/day12/", 
+            "text": "Day 12 : Defining a Function\n\n\nWork in Progress", 
+            "title": "Day 12 : Defining a Function"
+        }, 
+        {
+            "location": "/Some-Basics/day12/#day-12-defining-a-function", 
+            "text": "Work in Progress", 
+            "title": "Day 12 : Defining a Function"
+        }, 
+        {
+            "location": "/Some-Basics/day13/", 
+            "text": "Day 13 : Typing Less \n Accomplish More\n\n\nWork in Progress", 
+            "title": "Day 13 : Typing Less & Accomplish More"
+        }, 
+        {
+            "location": "/Some-Basics/day13/#day-13-typing-less-accomplish-more", 
+            "text": "Work in Progress", 
+            "title": "Day 13 : Typing Less &amp; Accomplish More"
+        }, 
+        {
+            "location": "/Some-Basics/day14/", 
+            "text": "Day 14 : Avoiding Some Common Mistakes\n\n\nWork in Progress", 
+            "title": "Day 14 : Avoiding Some Common Mistakes"
+        }, 
+        {
+            "location": "/Some-Basics/day14/#day-14-avoiding-some-common-mistakes", 
+            "text": "Work in Progress", 
+            "title": "Day 14 : Avoiding Some Common Mistakes"
         }
     ]
 }

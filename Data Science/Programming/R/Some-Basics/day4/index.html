@@ -238,10 +238,171 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Day 4 : Deleting Variables
+      </label>
+    
     <a href="./" title="Day 4 : Deleting Variables" class="md-nav__link md-nav__link--active">
       Day 4 : Deleting Variables
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" title="Problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" title="Solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" title="Discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day5/" title="Day 5 : Creating a Vector" class="md-nav__link">
+      Day 5 : Creating a Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day6/" title="Day 6 : Computing Basic Statistics" class="md-nav__link">
+      Day 6 : Computing Basic Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day7/" title="Day 7 : Creating Sequence" class="md-nav__link">
+      Day 7 : Creating Sequence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day8/" title="Day 8 : Comparing Vectors" class="md-nav__link">
+      Day 8 : Comparing Vectors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day9/" title="Day 9 : Selecting Vector Elements" class="md-nav__link">
+      Day 9 : Selecting Vector Elements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day10/" title="Day 10 : Performing Vector Arithmetic" class="md-nav__link">
+      Day 10 : Performing Vector Arithmetic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day11/" title="Day 11 : Getting Operator Precedence Right" class="md-nav__link">
+      Day 11 : Getting Operator Precedence Right
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day12/" title="Day 12 : Defining a Function" class="md-nav__link">
+      Day 12 : Defining a Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day13/" title="Day 13 : Typing Less & Accomplish More" class="md-nav__link">
+      Day 13 : Typing Less & Accomplish More
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../day14/" title="Day 14 : Avoiding Some Common Mistakes" class="md-nav__link">
+      Day 14 : Avoiding Some Common Mistakes
+    </a>
   </li>
 
         
@@ -267,6 +428,34 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" title="Problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" title="Solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" title="Discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -279,7 +468,54 @@
                 
                 
                 <h1 id="day-4-deleting-variables">Day 4 : Deleting Variables<a class="headerlink" href="#day-4-deleting-variables" title="Permanent link">&para;</a></h1>
-<p>Work in Progress</p>
+<h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
+<p>How do we remove unneeded variables or functions from our workspace or How to erase its contents completely?</p>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Use the <code>rm</code> function</li>
+</ul>
+<h2 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h2>
+<p>Your workspace can get cluttered quickly. The rm function removes, permanently, one or more objects from the workspace:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> x <span class="o">&lt;-</span> <span class="m">2</span><span class="o">*</span><span class="kc">pi</span>
+<span class="o">&gt;</span> x
+<span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="m">6.283185</span>
+
+<span class="o">&gt;</span> <span class="kp">rm</span><span class="p">(</span>x<span class="p">)</span>
+<span class="o">&gt;</span> x
+Error<span class="o">:</span> object <span class="s">&quot;x&quot;</span> not found
+</pre></div>
+</td></tr></table>
+
+<p>There is no <strong>“undo”</strong>; once the variable is gone, it’s gone. You can remove several variables at once:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; rm(x,y,z)
+</pre></div>
+</td></tr></table>
+
+<p>You can even erase your entire workspace at once. The <code>rm</code> function has a list argument consisting of a vector of names of variables to remove. Recall that the <code>ls</code> function returns a vector of variables names; hence you can combine <code>rm</code> and <code>ls</code> to erase everything:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; ls()
+[1] &quot;f&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
+
+&gt; rm(list=ls())
+&gt; ls()
+character(0)
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Be Polite</p>
+<p>Never put <code>rm(list=ls())</code> into code you share with others, such as a library function or sample code sent to a mailing list. Deleting all the variables in someone else’s workspace is worse than rude and will make you extremely unpopular.</p>
+</div>
                 
                   
                 
@@ -312,6 +548,20 @@
             </div>
           </a>
         
+        
+          <a href="../day5/" title="Day 5 : Creating a Vector" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Day 5 : Creating a Vector
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
