@@ -117,23 +117,48 @@
         }, 
         {
             "location": "/Some-Basics/day5/", 
-            "text": "Day 5 : Creating a Vector\n\n\nWork in Progress", 
+            "text": "Day 5 : Creating a Vector\n\n\nProblem\n\n\nHow can we create a vector?\n\n\nSolution\n\n\n\n\nUse the \nc(...)\n operator to construct a vector from given values.\n\n\n\n\nDiscussion\n\n\nVectors are a central component of R, not just another data structure. A vector can contain either numbers, strings, or logical values but \nnot a mixture\n.\n\n\nThe c(...) operator can construct a vector from simple elements:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n c(1,1,2,3,5,8,13,21)\n[1] 1 1 2 3 5 8 13 21\n\n\n c(1*pi, 2*pi, 3*pi, 4*pi)\n[1] 3.141593 6.283185 9.424778 12.566371\n\n\n c(\nEveryone\n, \nloves\n, \nstats.\n)\n[1] \nEveryone\n \nloves\n \nstats.\n\n\n\n c(TRUE,TRUE,FALSE,TRUE)\n[1] TRUE TRUE FALSE TRUE\n\n\n\n\n\n\n\n\n\nIf the arguments to \nc(...)\n are themselves vectors, it flattens them and combines them into one single vector:\n\n\n1\n2\n3\n4\n v1 \n-\n \nc\n(\n1\n,\n2\n,\n3\n)\n\n\n v2 \n-\n \nc\n(\n4\n,\n5\n,\n6\n)\n\n\n \nc\n(\nv1\n,\nv2\n)\n\n\n[\n1\n]\n \n1\n \n2\n \n3\n \n4\n \n5\n \n6\n\n\n\n\n\n\n\n\n\n\nVectors cannot contain a mix of data types, such as numbers and strings. If you create a vector from mixed elements, R will try to accommodate you by converting one of them:\n\n\n1\n2\n3\n4\n v1 \n-\n \nc\n(\n1\n,\n2\n,\n3\n)\n\n\n v3 \n-\n \nc\n(\nA\n,\nB\n,\nC\n)\n\n\n \nc\n(\nv1\n,\nv3\n)\n\n\n[\n1\n]\n \n1\n \n2\n \n3\n \nA\n \nB\n \nC\n\n\n\n\n\n\n\nHere, the user tried to create a vector from both numbers and strings. R converted all the numbers to strings before creating the vector, thereby making the data elements compatible.\n\n\n\n\n\nTechnically speaking, two data elements can coexist in a vector only if they have the same mode. The modes of \n3.1415\n and \n\"foo\"\n are numeric and character, respectively:\n\n\n1\n2\n3\n4\n5\n mode(3.1415)\n[1] \nnumeric\n\n\n\n mode(\nfoo\n)\n[1] \ncharacter\n\n\n\n\n\n\n\nThose modes are incompatible. To make a vector from them, R converts \n3.1415\n to character mode so it will be compatible with \n\"foo\"\n :\n\n\n1\n2\n3\n4\n c(3.1415, \nfoo\n)\n[1] \n3.1415\n \nfoo\n\n\n mode(c(3.1415, \nfoo\n))\n[1] \ncharacter", 
             "title": "Day 5 : Creating a Vector"
         }, 
         {
             "location": "/Some-Basics/day5/#day-5-creating-a-vector", 
-            "text": "Work in Progress", 
+            "text": "", 
             "title": "Day 5 : Creating a Vector"
         }, 
         {
+            "location": "/Some-Basics/day5/#problem", 
+            "text": "How can we create a vector?", 
+            "title": "Problem"
+        }, 
+        {
+            "location": "/Some-Basics/day5/#solution", 
+            "text": "Use the  c(...)  operator to construct a vector from given values.", 
+            "title": "Solution"
+        }, 
+        {
+            "location": "/Some-Basics/day5/#discussion", 
+            "text": "Vectors are a central component of R, not just another data structure. A vector can contain either numbers, strings, or logical values but  not a mixture .  The c(...) operator can construct a vector from simple elements:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11  c(1,1,2,3,5,8,13,21)\n[1] 1 1 2 3 5 8 13 21  c(1*pi, 2*pi, 3*pi, 4*pi)\n[1] 3.141593 6.283185 9.424778 12.566371  c( Everyone ,  loves ,  stats. )\n[1]  Everyone   loves   stats.   c(TRUE,TRUE,FALSE,TRUE)\n[1] TRUE TRUE FALSE TRUE    If the arguments to  c(...)  are themselves vectors, it flattens them and combines them into one single vector:  1\n2\n3\n4  v1  -   c ( 1 , 2 , 3 )   v2  -   c ( 4 , 5 , 6 )    c ( v1 , v2 )  [ 1 ]   1   2   3   4   5   6     Vectors cannot contain a mix of data types, such as numbers and strings. If you create a vector from mixed elements, R will try to accommodate you by converting one of them:  1\n2\n3\n4  v1  -   c ( 1 , 2 , 3 )   v3  -   c ( A , B , C )    c ( v1 , v3 )  [ 1 ]   1   2   3   A   B   C    Here, the user tried to create a vector from both numbers and strings. R converted all the numbers to strings before creating the vector, thereby making the data elements compatible.   Technically speaking, two data elements can coexist in a vector only if they have the same mode. The modes of  3.1415  and  \"foo\"  are numeric and character, respectively:  1\n2\n3\n4\n5  mode(3.1415)\n[1]  numeric   mode( foo )\n[1]  character    Those modes are incompatible. To make a vector from them, R converts  3.1415  to character mode so it will be compatible with  \"foo\"  :  1\n2\n3\n4  c(3.1415,  foo )\n[1]  3.1415   foo   mode(c(3.1415,  foo ))\n[1]  character", 
+            "title": "Discussion"
+        }, 
+        {
             "location": "/Some-Basics/day6/", 
-            "text": "Day 6 : Computing Basic Statistics\n\n\nWork in Progress", 
+            "text": "Day 6 : Computing Basic Statistics\n\n\nProblem\n\n\nHow can we calculate the basic summary numbers like:\n\n\n\n\nMean\n\n\nMedian\n\n\nStandard Deviation\n\n\nVariance\n\n\nCorrelation\n\n\nCovariance\n\n\n\n\nSolution\n\n\nIf \nx\n and \ny\n are vectors, then we can use one of these functions:\n\n\n\n\nmean(x)\n\n\nmedian(x)\n\n\nsd(x)\n\n\nvar(x)\n\n\ncor(x, y)\n\n\ncov(x, y)", 
             "title": "Day 6 : Computing Basic Statistics"
         }, 
         {
             "location": "/Some-Basics/day6/#day-6-computing-basic-statistics", 
-            "text": "Work in Progress", 
+            "text": "", 
             "title": "Day 6 : Computing Basic Statistics"
+        }, 
+        {
+            "location": "/Some-Basics/day6/#problem", 
+            "text": "How can we calculate the basic summary numbers like:   Mean  Median  Standard Deviation  Variance  Correlation  Covariance", 
+            "title": "Problem"
+        }, 
+        {
+            "location": "/Some-Basics/day6/#solution", 
+            "text": "If  x  and  y  are vectors, then we can use one of these functions:   mean(x)  median(x)  sd(x)  var(x)  cor(x, y)  cov(x, y)", 
+            "title": "Solution"
         }, 
         {
             "location": "/Some-Basics/day7/", 
