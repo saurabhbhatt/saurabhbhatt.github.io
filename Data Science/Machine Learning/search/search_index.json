@@ -1,0 +1,264 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Preface\n\n\nMachine Learning (a.k.a. ML) has become one of the most exiting technologies in our age and from small to big companies like Google, Facebook, Apple, Amazon uses machine learning research and applications for good reasons. This exiciting field (i.e. Machine learning) opens the way to new possibilities in our daily lives. Few examples are\n\n\n\n\nVoice assistance on our smartphone\n\n\nRecommending the right product for our customers\n\n\nPreventing credit card fraud\n\n\nFiltering out spams from our inboxes\n\n\nDetecting and diagnosing medical diseases... and so on \n\n\n\n\nGetting exposed to practical code examples and working through example applications of machine learning are a great way to dive into this field. Concrete examples help illustrate the broader concepts by putting the learned material directly into action. \n\n\nWe are going to use Python Programming Language and Python-based machine learning libraries. Also, We will understand the mathematical concepts behind machine learning algorithms, which is essential for using machine learning successfully.\n\n\nWe can truly say that the study of machine learning will make us better scientist, thinkers and problem solvers. Knowledge is somethig which is gained by learning and the real mastery of skills can only be achieve by practice.", 
+            "title": "Preface"
+        }, 
+        {
+            "location": "/#preface", 
+            "text": "Machine Learning (a.k.a. ML) has become one of the most exiting technologies in our age and from small to big companies like Google, Facebook, Apple, Amazon uses machine learning research and applications for good reasons. This exiciting field (i.e. Machine learning) opens the way to new possibilities in our daily lives. Few examples are   Voice assistance on our smartphone  Recommending the right product for our customers  Preventing credit card fraud  Filtering out spams from our inboxes  Detecting and diagnosing medical diseases... and so on    Getting exposed to practical code examples and working through example applications of machine learning are a great way to dive into this field. Concrete examples help illustrate the broader concepts by putting the learned material directly into action.   We are going to use Python Programming Language and Python-based machine learning libraries. Also, We will understand the mathematical concepts behind machine learning algorithms, which is essential for using machine learning successfully.  We can truly say that the study of machine learning will make us better scientist, thinkers and problem solvers. Knowledge is somethig which is gained by learning and the real mastery of skills can only be achieve by practice.", 
+            "title": "Preface"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/", 
+            "text": "Chapter 3: Classification\n\n\nMNIST Dataset\n\n\nIn this chapter, we will be using MNIST dataset. \n\n\n \nfrom\n \nsklearn.datasets\n \nimport\n \nfetch_mldata\n\n\n \nmnist\n \n=\n \nfetch_mldata\n(\nMNIST original\n)\n\n\n\n\n\nTraining a Binary Classifier\n\n\nPerformance Measure\n\n\nMeasuring Accuracy using Cross-Validation\n\n\nConfusion Matrix\n\n\nPrecision and Recall\n\n\nPrecision / Recall Tradeoff\n\n\nThe RoC Curve\n\n\nMulticlass Classification\n\n\nError Analysis\n\n\nMultilabel Classification\n\n\nMultioutput Classification\n\n\nExercise\n\n\nTitanic Dataset\n\n\nSpam Classifier\n\n\n\n\nDownload Examples of", 
+            "title": "Chapter 3: Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#chapter-3-classification", 
+            "text": "", 
+            "title": "Chapter 3: Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#mnist-dataset", 
+            "text": "In this chapter, we will be using MNIST dataset.     from   sklearn.datasets   import   fetch_mldata    mnist   =   fetch_mldata ( MNIST original )", 
+            "title": "MNIST Dataset"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#training-a-binary-classifier", 
+            "text": "", 
+            "title": "Training a Binary Classifier"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#performance-measure", 
+            "text": "", 
+            "title": "Performance Measure"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#measuring-accuracy-using-cross-validation", 
+            "text": "", 
+            "title": "Measuring Accuracy using Cross-Validation"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#confusion-matrix", 
+            "text": "", 
+            "title": "Confusion Matrix"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#precision-and-recall", 
+            "text": "", 
+            "title": "Precision and Recall"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#precision-recall-tradeoff", 
+            "text": "", 
+            "title": "Precision / Recall Tradeoff"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#the-roc-curve", 
+            "text": "", 
+            "title": "The RoC Curve"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#multiclass-classification", 
+            "text": "", 
+            "title": "Multiclass Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#error-analysis", 
+            "text": "", 
+            "title": "Error Analysis"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#multilabel-classification", 
+            "text": "", 
+            "title": "Multilabel Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#multioutput-classification", 
+            "text": "", 
+            "title": "Multioutput Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#exercise", 
+            "text": "", 
+            "title": "Exercise"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#titanic-dataset", 
+            "text": "", 
+            "title": "Titanic Dataset"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Classification/#spam-classifier", 
+            "text": "Download Examples of", 
+            "title": "Spam Classifier"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/", 
+            "text": "Chapter 4: Training Models\n\n\nLinear Regression\n\n\nThe Normal Equation\n\n\nComputational Complexity\n\n\nGradient Descent\n\n\nBatch Gradient Descent\n\n\nStochastic Gradient Descent\n\n\nMini-batch Gradient Descent\n\n\nPolynomial Regression\n\n\nLearning Curves\n\n\nRegularized Linear Models\n\n\nRidge Regression\n\n\nLasso Regression\n\n\nElastic Net\n\n\nEarly Stopping\n\n\nLogistic Regression\n\n\nEstimating Probabilities\n\n\nTraining and Cost Function\n\n\nDecision Boundaries\n\n\nSoftmax Regression\n\n\nExercise", 
+            "title": "Chapter 4: Training Models"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#chapter-4-training-models", 
+            "text": "", 
+            "title": "Chapter 4: Training Models"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#linear-regression", 
+            "text": "", 
+            "title": "Linear Regression"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#the-normal-equation", 
+            "text": "", 
+            "title": "The Normal Equation"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#computational-complexity", 
+            "text": "", 
+            "title": "Computational Complexity"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#gradient-descent", 
+            "text": "", 
+            "title": "Gradient Descent"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#batch-gradient-descent", 
+            "text": "", 
+            "title": "Batch Gradient Descent"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#stochastic-gradient-descent", 
+            "text": "", 
+            "title": "Stochastic Gradient Descent"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#mini-batch-gradient-descent", 
+            "text": "", 
+            "title": "Mini-batch Gradient Descent"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#polynomial-regression", 
+            "text": "", 
+            "title": "Polynomial Regression"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#learning-curves", 
+            "text": "", 
+            "title": "Learning Curves"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#regularized-linear-models", 
+            "text": "", 
+            "title": "Regularized Linear Models"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#ridge-regression", 
+            "text": "", 
+            "title": "Ridge Regression"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#lasso-regression", 
+            "text": "", 
+            "title": "Lasso Regression"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#elastic-net", 
+            "text": "", 
+            "title": "Elastic Net"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#early-stopping", 
+            "text": "", 
+            "title": "Early Stopping"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#logistic-regression", 
+            "text": "", 
+            "title": "Logistic Regression"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#estimating-probabilities", 
+            "text": "", 
+            "title": "Estimating Probabilities"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#training-and-cost-function", 
+            "text": "", 
+            "title": "Training and Cost Function"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#decision-boundaries", 
+            "text": "", 
+            "title": "Decision Boundaries"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#softmax-regression", 
+            "text": "", 
+            "title": "Softmax Regression"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Training Models/#exercise", 
+            "text": "", 
+            "title": "Exercise"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Support Vector Machines/", 
+            "text": "Chapter 5: Support Vector Machines\n\n\nLinear SVM Classification\n\n\nSoft Margin Classification\n\n\nNon-linear SVM Classification", 
+            "title": "Chapter 5: Support Vector Machines"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Support Vector Machines/#chapter-5-support-vector-machines", 
+            "text": "", 
+            "title": "Chapter 5: Support Vector Machines"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Support Vector Machines/#linear-svm-classification", 
+            "text": "", 
+            "title": "Linear SVM Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Support Vector Machines/#soft-margin-classification", 
+            "text": "", 
+            "title": "Soft Margin Classification"
+        }, 
+        {
+            "location": "/Fundamentals of Machine Learning/Support Vector Machines/#non-linear-svm-classification", 
+            "text": "", 
+            "title": "Non-linear SVM Classification"
+        }, 
+        {
+            "location": "/Time Series/Basics of Time Series/", 
+            "text": "Basics of Time Series\n\n\nBasics of time series modeling includes the following:\n\n\n\n\nStationary Series\n\n\nRandom Walks\n\n\nRho - Coefficient\n\n\nDickey - Fuller test of stationarity\n\n\n\n\nStationary Series\n\n\nA time series is classified as \nStationary\n is based on three criterion:\n\n\n\n\n\n\nConstant Mean:\n Mean of the series should not be a function of time. It should be constant. Mathematically, $$ \\bar{y_t} \\ne f(t) $$ Where, \n\\(\\bar{y_t}\\)\n is the mean of the time series \n\\(y_t\\)\n. Graphically, \n \nFrom the above figure, it can be seen easily that  \n\n\n\n\n\n\nConstant Variance:\n\n\n\n\n\n\nRandom Walks\n\n\nRho - Coefficient\n\n\nDickey - Fuller test of stationarity", 
+            "title": "Basics of Time Series"
+        }, 
+        {
+            "location": "/Time Series/Basics of Time Series/#basics-of-time-series", 
+            "text": "Basics of time series modeling includes the following:   Stationary Series  Random Walks  Rho - Coefficient  Dickey - Fuller test of stationarity", 
+            "title": "Basics of Time Series"
+        }, 
+        {
+            "location": "/Time Series/Basics of Time Series/#stationary-series", 
+            "text": "A time series is classified as  Stationary  is based on three criterion:    Constant Mean:  Mean of the series should not be a function of time. It should be constant. Mathematically, $$ \\bar{y_t} \\ne f(t) $$ Where,  \\(\\bar{y_t}\\)  is the mean of the time series  \\(y_t\\) . Graphically,    From the above figure, it can be seen easily that      Constant Variance:", 
+            "title": "Stationary Series"
+        }, 
+        {
+            "location": "/Time Series/Basics of Time Series/#random-walks", 
+            "text": "", 
+            "title": "Random Walks"
+        }, 
+        {
+            "location": "/Time Series/Basics of Time Series/#rho-coefficient", 
+            "text": "", 
+            "title": "Rho - Coefficient"
+        }, 
+        {
+            "location": "/Time Series/Basics of Time Series/#dickey-fuller-test-of-stationarity", 
+            "text": "", 
+            "title": "Dickey - Fuller test of stationarity"
+        }
+    ]
+}
