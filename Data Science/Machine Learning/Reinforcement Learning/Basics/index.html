@@ -32,7 +32,7 @@
     
     
       
-        <title>Basics of Time Series - Machine Learning with Python</title>
+        <title>Basics of Reinforcement Learning - Machine Learning with Python</title>
       
     
     
@@ -92,7 +92,7 @@
                 Machine Learning with Python
               </span>
               <span class="md-header-nav__topic">
-                Basics of Time Series
+                Basics of Reinforcement Learning
               </span>
             
           
@@ -231,10 +231,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Part 2: Reinforcement Learning
@@ -242,44 +244,6 @@
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
         Part 2: Reinforcement Learning
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Reinforcement Learning/Basics/" title="Basics of Reinforcement Learning" class="md-nav__link">
-      Basics of Reinforcement Learning
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Part 3: Time Series
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Part 3: Time Series
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -299,11 +263,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Basics of Time Series
+        Basics of Reinforcement Learning
       </label>
     
-    <a href="./" title="Basics of Time Series" class="md-nav__link md-nav__link--active">
-      Basics of Time Series
+    <a href="./" title="Basics of Reinforcement Learning" class="md-nav__link md-nav__link--active">
+      Basics of Reinforcement Learning
     </a>
     
       
@@ -317,29 +281,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stationary-series" title="Stationary Series" class="md-nav__link">
-    Stationary Series
+  <a href="#maximizing-future-rewards" title="Maximizing Future Rewards" class="md-nav__link">
+    Maximizing Future Rewards
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#random-walks" title="Random Walks" class="md-nav__link">
-    Random Walks
+  <a href="#q-learning" title="Q-Learning" class="md-nav__link">
+    Q-Learning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rho-coefficient" title="Rho - Coefficient" class="md-nav__link">
-    Rho - Coefficient
+  <a href="#the-deep-q-network-as-a-q-function" title="The deep Q-network as a Q-function" class="md-nav__link">
+    The deep Q-network as a Q-function
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dickey-fuller-test-of-stationarity" title="Dickey - Fuller test of stationarity" class="md-nav__link">
-    Dickey - Fuller test of stationarity
+  <a href="#balancing-exploration-with-exploitation" title="Balancing Exploration with Exploitation" class="md-nav__link">
+    Balancing Exploration with Exploitation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experience-replay-or-the-value-of-experience" title="Experience replay, or the value of experience" class="md-nav__link">
+    Experience replay, or the value of experience
   </a>
   
 </li>
@@ -350,6 +321,42 @@
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Part 3: Time Series
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Part 3: Time Series
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Time Series/Basics of Time Series/" title="Basics of Time Series" class="md-nav__link">
+      Basics of Time Series
+    </a>
   </li>
 
         
@@ -415,29 +422,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stationary-series" title="Stationary Series" class="md-nav__link">
-    Stationary Series
+  <a href="#maximizing-future-rewards" title="Maximizing Future Rewards" class="md-nav__link">
+    Maximizing Future Rewards
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#random-walks" title="Random Walks" class="md-nav__link">
-    Random Walks
+  <a href="#q-learning" title="Q-Learning" class="md-nav__link">
+    Q-Learning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rho-coefficient" title="Rho - Coefficient" class="md-nav__link">
-    Rho - Coefficient
+  <a href="#the-deep-q-network-as-a-q-function" title="The deep Q-network as a Q-function" class="md-nav__link">
+    The deep Q-network as a Q-function
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dickey-fuller-test-of-stationarity" title="Dickey - Fuller test of stationarity" class="md-nav__link">
-    Dickey - Fuller test of stationarity
+  <a href="#balancing-exploration-with-exploitation" title="Balancing Exploration with Exploitation" class="md-nav__link">
+    Balancing Exploration with Exploitation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experience-replay-or-the-value-of-experience" title="Experience replay, or the value of experience" class="md-nav__link">
+    Experience replay, or the value of experience
   </a>
   
 </li>
@@ -457,27 +471,26 @@
               
                 
                 
-                <h1 id="basics-of-time-series">Basics of Time Series</h1>
-<p>Basics of time series modeling includes the following:</p>
+                <h1 id="basics-of-reinforcement-learning">Basics of Reinforcement Learning</h1>
+<p>A single game is one episode of this process, and is represented by a finite sequence of states, actions and rewards:</p>
+<span>\[s_0 , a_0 , r_1 , s_1 , a_1 , r_2 , s_2 , \dots , s_{n-1} , a_{n-1} , r_n , s_n\]</span><p>Since, this is a markov decision process, the probability of state <span>\(s_{t+1}\)</span> depends only on current state <span>\(s_t\)</span>
+and action <span>\(a_t\)</span>.</p>
+<h2 id="maximizing-future-rewards">Maximizing Future Rewards</h2>
+<p>Suppose we are an agent, our objective will be to maximize the total reward for each game. Total reward can be represented as follows:</p>
+<span>\[R = \sum_{i=1}^{n} r_{i}\]</span><p>In order to maximize the total reward, the agent should try to maximize the total reward starts at any time point <span>\(t\)</span> in the game. The total reward at time step <span>\(t\)</span> is given by <span>\(R_t\)</span> and is represented as:</p>
+<span>\[R_t = \sum_{i=t}^{n} r_{i} = r_t + r_{t+1} + \dots + r_n\]</span><p>The reason we are maximizing the future reward is that we can't change the reward which we already get in the past and that is why maximization of future rewards is the only option to maximize the total reward.</p>
+<p>However, it is harder to predict the value of the rewards as we go further into the future. In order to take this into consideration, our agent should try to maximize the total discounted future reward at time <span>\(t\)</span> instead. This is done by discounting the reward at each future time step by a factor <span>\(\gamma\)</span> over the previous time step. </p>
 <ul>
-<li>Stationary Series</li>
-<li>Random Walks</li>
-<li>Rho - Coefficient</li>
-<li>Dickey - Fuller test of stationarity</li>
+<li>If <span>\(\gamma = 0\)</span>, then our network does not consider future rewards at all, and </li>
+<li>if <span>\(\gamma = 1\)</span>, then our network is completely deterministic. </li>
 </ul>
-<h2 id="stationary-series">Stationary Series</h2>
-<p>A time series is classified as <strong>Stationary</strong> is based on three criterion:</p>
-<ol>
-<li>
-<p><strong>Constant Mean:</strong> Mean of the series should not be a function of time. It should be constant. Mathematically, $$ \bar{y_t} \ne f(t) $$ Where, <span>\(\bar{y_t}\)</span> is the mean of the time series <span>\(y_t\)</span>. Graphically, <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png"> <br/>From the above figure, it can be seen easily that  </p>
-</li>
-<li>
-<p><strong>Constant Variance:</strong></p>
-</li>
-</ol>
-<h2 id="random-walks">Random Walks</h2>
-<h2 id="rho-coefficient">Rho - Coefficient</h2>
-<h2 id="dickey-fuller-test-of-stationarity">Dickey - Fuller test of stationarity</h2>
+<p>A good value for <span>\(\gamma\)</span> is around 0.9. Factoring the equation allows us to express the total discounted future reward at a given time step recursively as the sum of the current reward and the total discounted future reward at the next time step:</p>
+<span>\[\begin{split}
+R_t &amp; = r_t + \gamma r_{t+1} + \gamma^2 r_{t+2} + \dots + \gamma^{n-t} r_n \\ &amp; = r_t + \gamma (r_{t+1} + \gamma (r_{t+2} + \dots))  \\ &amp; = r_t + \gamma R_{t+1}
+\end{split}\]</span><h2 id="q-learning">Q-Learning</h2>
+<h2 id="the-deep-q-network-as-a-q-function">The deep Q-network as a Q-function</h2>
+<h2 id="balancing-exploration-with-exploitation">Balancing Exploration with Exploitation</h2>
+<h2 id="experience-replay-or-the-value-of-experience">Experience replay, or the value of experience</h2>
                 
                   
                 
@@ -496,7 +509,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../Reinforcement Learning/Basics/" title="Basics of Reinforcement Learning" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Fundamentals of Machine Learning/Support Vector Machines/" title="Chapter 5: Support Vector Machines" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -505,19 +518,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Basics of Reinforcement Learning
+                Chapter 5: Support Vector Machines
               </span>
             </div>
           </a>
         
         
-          <a href="../../Recommendation Engine/Collaborative Filtering/" title="Collaborative Filtering" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Time Series/Basics of Time Series/" title="Basics of Time Series" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Collaborative Filtering
+                Basics of Time Series
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

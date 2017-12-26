@@ -231,6 +231,41 @@
             "title": "Non-linear SVM Classification"
         }, 
         {
+            "location": "/Reinforcement Learning/Basics/", 
+            "text": "Basics of Reinforcement Learning\n\n\nA single game is one episode of this process, and is represented by a finite sequence of states, actions and rewards:\n\n\n\\[s_0 , a_0 , r_1 , s_1 , a_1 , r_2 , s_2 , \\dots , s_{n-1} , a_{n-1} , r_n , s_n\\]\nSince, this is a markov decision process, the probability of state \n\\(s_{t+1}\\)\n depends only on current state \n\\(s_t\\)\n\nand action \n\\(a_t\\)\n.\n\n\nMaximizing Future Rewards\n\n\nSuppose we are an agent, our objective will be to maximize the total reward for each game. Total reward can be represented as follows:\n\n\n\\[R = \\sum_{i=1}^{n} r_{i}\\]\nIn order to maximize the total reward, the agent should try to maximize the total reward starts at any time point \n\\(t\\)\n in the game. The total reward at time step \n\\(t\\)\n is given by \n\\(R_t\\)\n and is represented as:\n\n\n\\[R_t = \\sum_{i=t}^{n} r_{i} = r_t + r_{t+1} + \\dots + r_n\\]\nThe reason we are maximizing the future reward is that we can't change the reward which we already get in the past and that is why maximization of future rewards is the only option to maximize the total reward.\n\n\nHowever, it is harder to predict the value of the rewards as we go further into the future. In order to take this into consideration, our agent should try to maximize the total discounted future reward at time \n\\(t\\)\n instead. This is done by discounting the reward at each future time step by a factor \n\\(\\gamma\\)\n over the previous time step. \n\n\n\n\nIf \n\\(\\gamma = 0\\)\n, then our network does not consider future rewards at all, and \n\n\nif \n\\(\\gamma = 1\\)\n, then our network is completely deterministic. \n\n\n\n\nA good value for \n\\(\\gamma\\)\n is around 0.9. Factoring the equation allows us to express the total discounted future reward at a given time step recursively as the sum of the current reward and the total discounted future reward at the next time step:\n\n\n\\[\\begin{split}\nR_t \n = r_t + \\gamma r_{t+1} + \\gamma^2 r_{t+2} + \\dots + \\gamma^{n-t} r_n \\\\ \n = r_t + \\gamma (r_{t+1} + \\gamma (r_{t+2} + \\dots))  \\\\ \n = r_t + \\gamma R_{t+1}\n\\end{split}\\]\nQ-Learning\n\n\nThe deep Q-network as a Q-function\n\n\nBalancing Exploration with Exploitation\n\n\nExperience replay, or the value of experience", 
+            "title": "Basics of Reinforcement Learning"
+        }, 
+        {
+            "location": "/Reinforcement Learning/Basics/#basics-of-reinforcement-learning", 
+            "text": "A single game is one episode of this process, and is represented by a finite sequence of states, actions and rewards:  \\[s_0 , a_0 , r_1 , s_1 , a_1 , r_2 , s_2 , \\dots , s_{n-1} , a_{n-1} , r_n , s_n\\] Since, this is a markov decision process, the probability of state  \\(s_{t+1}\\)  depends only on current state  \\(s_t\\) \nand action  \\(a_t\\) .", 
+            "title": "Basics of Reinforcement Learning"
+        }, 
+        {
+            "location": "/Reinforcement Learning/Basics/#maximizing-future-rewards", 
+            "text": "Suppose we are an agent, our objective will be to maximize the total reward for each game. Total reward can be represented as follows:  \\[R = \\sum_{i=1}^{n} r_{i}\\] In order to maximize the total reward, the agent should try to maximize the total reward starts at any time point  \\(t\\)  in the game. The total reward at time step  \\(t\\)  is given by  \\(R_t\\)  and is represented as:  \\[R_t = \\sum_{i=t}^{n} r_{i} = r_t + r_{t+1} + \\dots + r_n\\] The reason we are maximizing the future reward is that we can't change the reward which we already get in the past and that is why maximization of future rewards is the only option to maximize the total reward.  However, it is harder to predict the value of the rewards as we go further into the future. In order to take this into consideration, our agent should try to maximize the total discounted future reward at time  \\(t\\)  instead. This is done by discounting the reward at each future time step by a factor  \\(\\gamma\\)  over the previous time step.    If  \\(\\gamma = 0\\) , then our network does not consider future rewards at all, and   if  \\(\\gamma = 1\\) , then our network is completely deterministic.    A good value for  \\(\\gamma\\)  is around 0.9. Factoring the equation allows us to express the total discounted future reward at a given time step recursively as the sum of the current reward and the total discounted future reward at the next time step:  \\[\\begin{split}\nR_t   = r_t + \\gamma r_{t+1} + \\gamma^2 r_{t+2} + \\dots + \\gamma^{n-t} r_n \\\\   = r_t + \\gamma (r_{t+1} + \\gamma (r_{t+2} + \\dots))  \\\\   = r_t + \\gamma R_{t+1}\n\\end{split}\\]", 
+            "title": "Maximizing Future Rewards"
+        }, 
+        {
+            "location": "/Reinforcement Learning/Basics/#q-learning", 
+            "text": "", 
+            "title": "Q-Learning"
+        }, 
+        {
+            "location": "/Reinforcement Learning/Basics/#the-deep-q-network-as-a-q-function", 
+            "text": "", 
+            "title": "The deep Q-network as a Q-function"
+        }, 
+        {
+            "location": "/Reinforcement Learning/Basics/#balancing-exploration-with-exploitation", 
+            "text": "", 
+            "title": "Balancing Exploration with Exploitation"
+        }, 
+        {
+            "location": "/Reinforcement Learning/Basics/#experience-replay-or-the-value-of-experience", 
+            "text": "", 
+            "title": "Experience replay, or the value of experience"
+        }, 
+        {
             "location": "/Time Series/Basics of Time Series/", 
             "text": "Basics of Time Series\n\n\nBasics of time series modeling includes the following:\n\n\n\n\nStationary Series\n\n\nRandom Walks\n\n\nRho - Coefficient\n\n\nDickey - Fuller test of stationarity\n\n\n\n\nStationary Series\n\n\nA time series is classified as \nStationary\n is based on three criterion:\n\n\n\n\n\n\nConstant Mean:\n Mean of the series should not be a function of time. It should be constant. Mathematically, $$ \\bar{y_t} \\ne f(t) $$ Where, \n\\(\\bar{y_t}\\)\n is the mean of the time series \n\\(y_t\\)\n. Graphically, \n \nFrom the above figure, it can be seen easily that  \n\n\n\n\n\n\nConstant Variance:\n\n\n\n\n\n\nRandom Walks\n\n\nRho - Coefficient\n\n\nDickey - Fuller test of stationarity", 
             "title": "Basics of Time Series"
@@ -259,6 +294,36 @@
             "location": "/Time Series/Basics of Time Series/#dickey-fuller-test-of-stationarity", 
             "text": "", 
             "title": "Dickey - Fuller test of stationarity"
+        }, 
+        {
+            "location": "/Recommendation Engine/Collaborative Filtering/", 
+            "text": "Collaborative Filtering\n\n\nCollaborative filtering (CF) uses the rating data given by the user for many items or products. CF is used for the following two tasks:\n\n\n\n\nPredicting the missing ratings\n\n\nCreating a top N recommendation list for a given user a.k.a. the \nactive user\n.\n\n\n\n\nMathematical Notation\n\n\nGroups of Collaborative filtering algorithms\n\n\nCollaborative Filtering algorithms are typically divided into two groups:\n\n\n\n\n\n\nMemory-Based CF Algorithms\n\n\n\n\nUses the whole user database to create recommendations\n\n\nAlso the most prominent algorithm\n\n\nDisadvantage:\n The disadvantage of this approach is \nscalability\n since the whole user database has to be processed online for creating recommendations\n\n\n\n\n\n\n\n\nModel-Based CF Algorithms\n\n\n\n\nUses the user database to learn a more compact model that is later used to create recommendations\n\n\n\n\n\n\n\n\nUser-based Collaborative Filtering\n\n\nItem-based Collaborative Filtering", 
+            "title": "Collaborative Filtering"
+        }, 
+        {
+            "location": "/Recommendation Engine/Collaborative Filtering/#collaborative-filtering", 
+            "text": "Collaborative filtering (CF) uses the rating data given by the user for many items or products. CF is used for the following two tasks:   Predicting the missing ratings  Creating a top N recommendation list for a given user a.k.a. the  active user .", 
+            "title": "Collaborative Filtering"
+        }, 
+        {
+            "location": "/Recommendation Engine/Collaborative Filtering/#mathematical-notation", 
+            "text": "", 
+            "title": "Mathematical Notation"
+        }, 
+        {
+            "location": "/Recommendation Engine/Collaborative Filtering/#groups-of-collaborative-filtering-algorithms", 
+            "text": "Collaborative Filtering algorithms are typically divided into two groups:    Memory-Based CF Algorithms   Uses the whole user database to create recommendations  Also the most prominent algorithm  Disadvantage:  The disadvantage of this approach is  scalability  since the whole user database has to be processed online for creating recommendations     Model-Based CF Algorithms   Uses the user database to learn a more compact model that is later used to create recommendations", 
+            "title": "Groups of Collaborative filtering algorithms"
+        }, 
+        {
+            "location": "/Recommendation Engine/Collaborative Filtering/#user-based-collaborative-filtering", 
+            "text": "", 
+            "title": "User-based Collaborative Filtering"
+        }, 
+        {
+            "location": "/Recommendation Engine/Collaborative Filtering/#item-based-collaborative-filtering", 
+            "text": "", 
+            "title": "Item-based Collaborative Filtering"
         }
     ]
 }

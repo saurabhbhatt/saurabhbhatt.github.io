@@ -32,7 +32,7 @@
     
     
       
-        <title>Basics of Time Series - Machine Learning with Python</title>
+        <title>Collaborative Filtering - Machine Learning with Python</title>
       
     
     
@@ -92,7 +92,7 @@
                 Machine Learning with Python
               </span>
               <span class="md-header-nav__topic">
-                Basics of Time Series
+                Collaborative Filtering
               </span>
             
           
@@ -267,12 +267,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Part 3: Time Series
@@ -280,6 +278,44 @@
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
         Part 3: Time Series
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Time Series/Basics of Time Series/" title="Basics of Time Series" class="md-nav__link">
+      Basics of Time Series
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Part 4: Recommendation Engine
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Part 4: Recommendation Engine
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -299,11 +335,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Basics of Time Series
+        Collaborative Filtering
       </label>
     
-    <a href="./" title="Basics of Time Series" class="md-nav__link md-nav__link--active">
-      Basics of Time Series
+    <a href="./" title="Collaborative Filtering" class="md-nav__link md-nav__link--active">
+      Collaborative Filtering
     </a>
     
       
@@ -317,30 +353,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stationary-series" title="Stationary Series" class="md-nav__link">
-    Stationary Series
+  <a href="#mathematical-notation" title="Mathematical Notation" class="md-nav__link">
+    Mathematical Notation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#random-walks" title="Random Walks" class="md-nav__link">
-    Random Walks
+  <a href="#groups-of-collaborative-filtering-algorithms" title="Groups of Collaborative filtering algorithms" class="md-nav__link">
+    Groups of Collaborative filtering algorithms
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-based-collaborative-filtering" title="User-based Collaborative Filtering" class="md-nav__link">
+    User-based Collaborative Filtering
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rho-coefficient" title="Rho - Coefficient" class="md-nav__link">
-    Rho - Coefficient
+        
+          <li class="md-nav__item">
+  <a href="#item-based-collaborative-filtering" title="Item-based Collaborative Filtering" class="md-nav__link">
+    Item-based Collaborative Filtering
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#dickey-fuller-test-of-stationarity" title="Dickey - Fuller test of stationarity" class="md-nav__link">
-    Dickey - Fuller test of stationarity
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -350,42 +392,6 @@
   
 </nav>
     
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Part 4: Recommendation Engine
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Part 4: Recommendation Engine
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Recommendation Engine/Collaborative Filtering/" title="Collaborative Filtering" class="md-nav__link">
-      Collaborative Filtering
-    </a>
   </li>
 
         
@@ -415,30 +421,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stationary-series" title="Stationary Series" class="md-nav__link">
-    Stationary Series
+  <a href="#mathematical-notation" title="Mathematical Notation" class="md-nav__link">
+    Mathematical Notation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#random-walks" title="Random Walks" class="md-nav__link">
-    Random Walks
+  <a href="#groups-of-collaborative-filtering-algorithms" title="Groups of Collaborative filtering algorithms" class="md-nav__link">
+    Groups of Collaborative filtering algorithms
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-based-collaborative-filtering" title="User-based Collaborative Filtering" class="md-nav__link">
+    User-based Collaborative Filtering
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rho-coefficient" title="Rho - Coefficient" class="md-nav__link">
-    Rho - Coefficient
+        
+          <li class="md-nav__item">
+  <a href="#item-based-collaborative-filtering" title="Item-based Collaborative Filtering" class="md-nav__link">
+    Item-based Collaborative Filtering
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#dickey-fuller-test-of-stationarity" title="Dickey - Fuller test of stationarity" class="md-nav__link">
-    Dickey - Fuller test of stationarity
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -457,27 +469,33 @@
               
                 
                 
-                <h1 id="basics-of-time-series">Basics of Time Series</h1>
-<p>Basics of time series modeling includes the following:</p>
+                <h1 id="collaborative-filtering">Collaborative Filtering</h1>
+<p>Collaborative filtering (CF) uses the rating data given by the user for many items or products. CF is used for the following two tasks:</p>
 <ul>
-<li>Stationary Series</li>
-<li>Random Walks</li>
-<li>Rho - Coefficient</li>
-<li>Dickey - Fuller test of stationarity</li>
+<li>Predicting the missing ratings</li>
+<li>Creating a top N recommendation list for a given user a.k.a. the <strong>active user</strong>.</li>
 </ul>
-<h2 id="stationary-series">Stationary Series</h2>
-<p>A time series is classified as <strong>Stationary</strong> is based on three criterion:</p>
+<h2 id="mathematical-notation">Mathematical Notation</h2>
+<h2 id="groups-of-collaborative-filtering-algorithms">Groups of Collaborative filtering algorithms</h2>
+<p>Collaborative Filtering algorithms are typically divided into two groups:</p>
 <ol>
 <li>
-<p><strong>Constant Mean:</strong> Mean of the series should not be a function of time. It should be constant. Mathematically, $$ \bar{y_t} \ne f(t) $$ Where, <span>\(\bar{y_t}\)</span> is the mean of the time series <span>\(y_t\)</span>. Graphically, <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png"> <br/>From the above figure, it can be seen easily that  </p>
+<p><em>Memory-Based CF Algorithms</em></p>
+<ul>
+<li>Uses the whole user database to create recommendations</li>
+<li>Also the most prominent algorithm</li>
+<li><strong>Disadvantage:</strong> The disadvantage of this approach is <em>scalability</em> since the whole user database has to be processed online for creating recommendations</li>
+</ul>
 </li>
 <li>
-<p><strong>Constant Variance:</strong></p>
+<p><em>Model-Based CF Algorithms</em></p>
+<ul>
+<li>Uses the user database to learn a more compact model that is later used to create recommendations</li>
+</ul>
 </li>
 </ol>
-<h2 id="random-walks">Random Walks</h2>
-<h2 id="rho-coefficient">Rho - Coefficient</h2>
-<h2 id="dickey-fuller-test-of-stationarity">Dickey - Fuller test of stationarity</h2>
+<h3 id="user-based-collaborative-filtering">User-based Collaborative Filtering</h3>
+<h3 id="item-based-collaborative-filtering">Item-based Collaborative Filtering</h3>
                 
                   
                 
@@ -496,7 +514,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../Reinforcement Learning/Basics/" title="Basics of Reinforcement Learning" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Time Series/Basics of Time Series/" title="Basics of Time Series" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -505,25 +523,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Basics of Reinforcement Learning
+                Basics of Time Series
               </span>
             </div>
           </a>
         
-        
-          <a href="../../Recommendation Engine/Collaborative Filtering/" title="Collaborative Filtering" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Collaborative Filtering
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
