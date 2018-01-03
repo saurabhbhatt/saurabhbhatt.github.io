@@ -636,15 +636,31 @@
                 
                 
                 <h1 id="chapter-3-classification">Chapter 3: Classification</h1>
+<p>We know that the most common supervised learning tasks are <strong>regression</strong> (predicting values) and <strong>classification</strong> (predicting classes). In regression, we can predict using various algorithms like Linear Regression, Decision Trees, Random Forest etc. In this chapter, we will figure out those algorithms which will be helpful in predicting classes. </p>
 <h2 id="mnist-dataset">MNIST Dataset</h2>
 <p>In this chapter, we will be using MNIST dataset. </p>
-<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_mldata</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">mnist</span> <span class="o">=</span> <span class="n">fetch_mldata</span><span class="p">(</span><span class="s1">&#39;MNIST original&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_mldata</span>
+<span class="n">mnist</span> <span class="o">=</span> <span class="n">fetch_mldata</span><span class="p">(</span><span class="s1">&#39;MNIST original&#39;</span><span class="p">)</span>
 </pre></div>
 
 <h2 id="training-a-binary-classifier">Training a Binary Classifier</h2>
 <h2 id="performance-measure">Performance Measure</h2>
+<p>Evaluating a classifer is often significantly trickier than evaluating a regressor. There are many performance measures are available. Let's see one by one.</p>
 <h3 id="measuring-accuracy-using-cross-validation">Measuring Accuracy using Cross-Validation</h3>
+<p>A good way to evaluate a model is by choosing the cross-validation.</p>
+<p>(Add box wala thing)</p>
+<div class="highlight"><pre><span></span><span class="c1"># Importing SGD Classifier from the library</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">SGDClassifier</span>
+
+<span class="c1"># Creating framework of model</span>
+<span class="n">sgd_clf</span> <span class="o">=</span> <span class="n">SGDClassifier</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Fitting data in the model to obtain the parameters</span>
+<span class="n">sgd_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_5</span><span class="p">)</span>
+</pre></div>
+
+<p>Yes, we can see that most of the time the predictor is choosing 1. This is simply because anly about 10% of the data or images are 5s. It means if we always guess that the image is not 5. We will be true for about 90% of the time. Such data is also known as skewed dataset.</p>
+<p>This is also one reason that the <code>accuracy</code> is generally not the preferred performance measure for classifiers, especially when we are dealing with <em>skewed datasets</em> (i.e., when some classes are much more frequent than others)</p>
 <h3 id="confusion-matrix">Confusion Matrix</h3>
 <h3 id="precision-and-recall">Precision and Recall</h3>
 <h3 id="precision-recall-tradeoff">Precision / Recall Tradeoff</h3>
