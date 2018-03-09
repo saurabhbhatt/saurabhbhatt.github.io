@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Getting Started\n\n\nThis tutorial is based on day to day practice of R programming. Better understanding will generate when it will be practicing more.\n\n\nSome Basics\n\n\n\n\nDay 1 : Printing Something\n\n\nDay 2 : Setting Variables\n\n\nDay 3 : Listing Variables\n\n\nDay 4 : Deleting Variables\n\n\nDay 5 : Creating a Vector\n\n\nDay 6 : Computing Basic Statistics\n\n\nDay 7 : Creating Sequence\n\n\nDay 8 : Comparing Vectors\n\n\nDay 9 : Selecting Vector Elements\n\n\nDay 10 : Performing Vector Arithmetic\n\n\nDay 11 : Getting Operator Precedence Right\n\n\nDay 12 : Defining a Function\n\n\nDay 13 : Typing Less \n Accomplish More\n\n\nDay 14 : Avoiding Some Common Mistakes", 
+            "text": "Getting Started\n\n\nThis tutorial is based on day to day practice of R programming. Better understanding will generate when it will be practicing more.\n\n\nSome Basics\n\n\n\n\nDay 1 : Printing Something\n\n\nDay 2 : Setting Variables\n\n\nDay 3 : Listing Variables\n\n\nDay 4 : Deleting Variables\n\n\nDay 5 : Creating a Vector\n\n\nDay 6 : Computing Basic Statistics\n\n\nDay 7 : Creating Sequence\n\n\nDay 8 : Comparing Vectors\n\n\nDay 9 : Selecting Vector Elements\n\n\nDay 10 : Performing Vector Arithmetic\n\n\nDay 11 : Getting Operator Precedence Right\n\n\nDay 12 : Defining a Function\n\n\nDay 13 : Typing Less \n Accomplish More\n\n\nDay 14 : Avoiding Some Common Mistakes\n\n\n\n\nAssignment 1: Laser Problem", 
             "title": "Getting Started"
         }, 
         {
@@ -14,6 +14,11 @@
             "location": "/#some-basics", 
             "text": "Day 1 : Printing Something  Day 2 : Setting Variables  Day 3 : Listing Variables  Day 4 : Deleting Variables  Day 5 : Creating a Vector  Day 6 : Computing Basic Statistics  Day 7 : Creating Sequence  Day 8 : Comparing Vectors  Day 9 : Selecting Vector Elements  Day 10 : Performing Vector Arithmetic  Day 11 : Getting Operator Precedence Right  Day 12 : Defining a Function  Day 13 : Typing Less   Accomplish More  Day 14 : Avoiding Some Common Mistakes", 
             "title": "Some Basics"
+        }, 
+        {
+            "location": "/#assignment-1-laser-problem", 
+            "text": "", 
+            "title": "Assignment 1: Laser Problem"
         }, 
         {
             "location": "/Some-Basics/day1/", 
@@ -239,6 +244,26 @@
             "location": "/Some-Basics/day14/#day-14-avoiding-some-common-mistakes", 
             "text": "Work in Progress", 
             "title": "Day 14 : Avoiding Some Common Mistakes"
+        }, 
+        {
+            "location": "/Assignments/Assignment1/", 
+            "text": "Assignment 1: Mayan Tomb Mystery\n\n\nProblem\n\n\nAyan, the adventurer, is one step away from solving the mystery of an ancient Mayan tomb. He just approached the secret chamber where the secret Mayan scriptures are locked in a chest.\n\n\nThere are \n\\(N\\)\n ancient statues in the room. After long thought, Ayan figured out that in order to open the treasure chest he needs to stand in the middle of the room and hit every statue with a laser ray at the same time.\n\n\nAyan is a highly experienced adventurer, so setting multiple laser rays at the same time is not a problem for him. Moreover, every ray that he creates is perfectly straight and never changes direction at all.\n\n\nThe middle of the room, where Ayan is standing, has coordinates \n\\((0, 0)\\)\n. Every statue is located at some point with coordinates \n\\((x, y)\\)\n. Each statue is made of pure glass, so that if any ray hits it, it doesn't stop, but goes through the statue and continues beyond in the same, unchanged direction.\n\n\nAyan wonders how he can hit every ancient statue in the room using the fewest possible rays. \n\n\nWhat should you do?\n\n\nWrite a function that takes input as a dataframe \n\\(A\\)\n (contains the location of statues) and returns the minimal number of rays that Ayan must set in order to hit every statue in the room.  \n\n\n1\n2\n3\nsolution \n-\n \nfunction\n(\nA\n)\n \n{\n\n    \n# write your code\n\n\n}\n\n\n\n\n\n\n\nFor example, given a dataframe \n\\(A\\)\n\n\n1\n2\n3\n4\n5\n6\n7\n A\n  x  y\n -1 -2\n  1  2\n  2  4\n -3  2\n  2 -2\n\n\n\n\n\n\nFunction should return the output as 4.", 
+            "title": "Assignment 1: Mayan Tomb Mystery"
+        }, 
+        {
+            "location": "/Assignments/Assignment1/#assignment-1-mayan-tomb-mystery", 
+            "text": "", 
+            "title": "Assignment 1: Mayan Tomb Mystery"
+        }, 
+        {
+            "location": "/Assignments/Assignment1/#problem", 
+            "text": "Ayan, the adventurer, is one step away from solving the mystery of an ancient Mayan tomb. He just approached the secret chamber where the secret Mayan scriptures are locked in a chest.  There are  \\(N\\)  ancient statues in the room. After long thought, Ayan figured out that in order to open the treasure chest he needs to stand in the middle of the room and hit every statue with a laser ray at the same time.  Ayan is a highly experienced adventurer, so setting multiple laser rays at the same time is not a problem for him. Moreover, every ray that he creates is perfectly straight and never changes direction at all.  The middle of the room, where Ayan is standing, has coordinates  \\((0, 0)\\) . Every statue is located at some point with coordinates  \\((x, y)\\) . Each statue is made of pure glass, so that if any ray hits it, it doesn't stop, but goes through the statue and continues beyond in the same, unchanged direction.  Ayan wonders how he can hit every ancient statue in the room using the fewest possible rays.", 
+            "title": "Problem"
+        }, 
+        {
+            "location": "/Assignments/Assignment1/#what-should-you-do", 
+            "text": "Write a function that takes input as a dataframe  \\(A\\)  (contains the location of statues) and returns the minimal number of rays that Ayan must set in order to hit every statue in the room.    1\n2\n3 solution  -   function ( A )   { \n     # write your code  }    For example, given a dataframe  \\(A\\)  1\n2\n3\n4\n5\n6\n7  A\n  x  y\n -1 -2\n  1  2\n  2  4\n -3  2\n  2 -2   Function should return the output as 4.", 
+            "title": "What should you do?"
         }
     ]
 }
